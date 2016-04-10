@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app" data-ng-controller="AppController as app" ng-cloak=" ">
+
+<head>
+    <title>cs test</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <body>
+
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout__title">csTest</span>
+                    <div class="mdl-layout-spacer"></div>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title"><a class="mdl-navigation__link" href="./">Home</a></span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="running-a-test.html">Running a test</a>
+                    <a class="mdl-navigation__link" href="recent-tests.html">Recent tests</a>
+                    <a class="mdl-navigation__link" href="saved-tests.html">Saved tests</a>
+                    <a class="mdl-navigation__link" href="settings.html">Settings</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="csd-content">
+                    <h4>Settings</h4>
+                    <p>To access settings click the menu icon next to the csTest title, then click the Settings menu option.</p>
+                    <p>Currently there are three groups of settings:
+                        <ul>
+                            <li>Test runner - allows you to configure the behaviour of the test tool</li>
+                            <li>Tests - allows you to configure the values used in your tests</li>
+                            <li>Upload test - allows you to upload a new test or a new version of an existing test to the tool</li>
+                        </ul>
+                    </p>
+                    <h5>Test Runner</h5>
+                    <p>In this section you can set how long the test runner should wait for the webserver to respond (in milliseconds)
+                        and which browsers should be used if the test requires use of a browser. Once you have made your
+                        changes click the Save button. To undo any changes click the Cancel button.</p>
+                    <h5>Tests</h5>
+                    <p>To set the variables used in a test, select your test from the Choose your test list. This will then
+                        list any variables used in the test and the current value used by the test. Once you have made your
+                        changes click the Save button. To undo any changes click the Cancel button.</p>
+                    <h5>Upload Test</h5>
+                    <p>If you have a new or updated test use this page to add it to csTest. Click the Choose Test button to
+                        choose the file that contains the test file to be uploaded. The should generally be a file with a
+                        .js extension. The person creating your file may have also sent a configuration file along with the
+                        test file. This file should have a .json extension and will contain the default values of any test
+                        variables and other test configuration information.</p>
+                </div>
+            </main>
+        </div>
+
+        <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    </body>
+
+</html>

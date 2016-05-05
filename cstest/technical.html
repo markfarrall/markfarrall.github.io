@@ -29,22 +29,22 @@
             </div>
             <main class="mdl-layout__content">
                 <div class="csd-content">
-                    <h4>Running a test</h4>
-                    <p>To run a test, choose the test you wish to run from the <span class="csd-ui-reference">Choose your 
-                        test</span> list. If your test contains variables you will also be shown the list of environments
-                        defined for that test. Choose the environment you want to use for the test.</p>
-                    <p>If you need to change variables in your environments click the <span class="csd-ui-reference">Edit 
-                        Variables</span> button. The <a href="variables.html">Variables</a> page has more information on
-                        managing these.</p>
-                    <p><img class="csd-screenshot" src="img\tests.png" aria-label="Test chooser"></p>
-                    <p>Once you have chosen your test and environment click the <span class="csd-ui-reference">Run 
-                        Test</span> button. Depending on the type of test you are running various windows may appear while
-                        the test is running.</p>
-                    <p><img class="csd-screenshot-small" src="img\status.png" aria-label="Test chooser"></p>
-                    <p>The results from the tests will be shown in the <span class="csd-ui-reference">Test Status</span> dialog.
-                        Once the test is completed the results and timings for the test are added to the recent tests section.If
-                        you encounter an error during the testing, or the application stops responding. You can click the
-                        Cancel Test button to choose another test, or restart your current test.</p>
+                    <h4>Technical</h4>
+                    <p>csTest relies on a number of open source packages to work. At a high level:
+                        <ul>
+                            <li>csTest is an implementation of <a href="http://electron.atom.io/" target="_blank">Electron</a></li>
+                            <li>Integration with the various browsers is provided by
+                                <a href="http://www.seleniumhq.org/" target="_blank">Selenium</a></li>
+                            <li>The test files are written in JavaScript and use the
+                                <a href="http://jasmine.github.io/" target="_blank">Jasmine</a> testing extensions.</li>
+                            <li>The tests are run using the <a href="https://nodejs.org/" target="_blank">Node</a> implementation
+                                of Jasmine</li>
+                        </ul>
+                    </p>
+                    <p>If you are comfortable with command line based tools you may prefer to look at
+                        <a href="http://angular.github.io/protractor/#/" target="_blank">Protractor</a> for a more easily
+                        scripted approach to automated testing. Or you could take a similar approach to csTest and use the
+                        Node version of Jasmine directly.</p>
                 </div>
             </main>
         </div>

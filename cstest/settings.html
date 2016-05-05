@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="app" data-ng-controller="AppController as app" ng-cloak=" ">
+<html lang="en">
 
 <head>
     <title>cs test</title>
@@ -23,33 +23,69 @@
                     <a class="mdl-navigation__link" href="recent-tests.html">Recent tests</a>
                     <a class="mdl-navigation__link" href="saved-tests.html">Saved tests</a>
                     <a class="mdl-navigation__link" href="settings.html">Settings</a>
+                    <a class="mdl-navigation__link" href="variables.html">Variables</a>
+                    <a class="mdl-navigation__link" href="technical.html">Technical</a>
                 </nav>
             </div>
             <main class="mdl-layout__content">
                 <div class="csd-content">
                     <h4>Settings</h4>
-                    <p>To access settings click the menu icon next to the csTest title, then click the Settings menu option.</p>
-                    <p>Currently there are three groups of settings:
+                    <p>Settings allow you to change the behaviour of csTest and control the tests you use. To access settings
+                        click the menu icon next to the csTest title, then click the <span class="csd-ui-reference">Settings
+                            </span> menu option.</p>
+                    <p>The settings sections are:
                         <ul>
-                            <li>Test runner - allows you to configure the behaviour of the test tool</li>
-                            <li>Tests - allows you to configure the values used in your tests</li>
-                            <li>Upload test - allows you to upload a new test or a new version of an existing test to the tool</li>
+                            <li>Test runner - configure how the testing behaves</li>
+                            <li>Logging - turn logging on or off and choose the level of messages logged</li>
+                            <li>Tests - upload new tests and update or delete existing tests</li>
+                            <li>Reset - return to the default configuration</li>
                         </ul>
                     </p>
                     <h5>Test Runner</h5>
+                    <p><img class="csd-screenshot-small" src="img\runner.png" aria-label="Test runner settings"></p>
                     <p>In this section you can set how long the test runner should wait for the webserver to respond (in milliseconds)
                         and which browsers should be used if the test requires use of a browser. Once you have made your
                         changes click the Save button. To undo any changes click the Cancel button.</p>
-                    <h5>Tests</h5>
+                    <h5>Logging</h5>
+                    <p><img class="csd-screenshot-small" src="img\logging.png" aria-label="Logging settings"></p>
                     <p>To set the variables used in a test, select your test from the Choose your test list. This will then
                         list any variables used in the test and the current value used by the test. Once you have made your
                         changes click the Save button. To undo any changes click the Cancel button.</p>
-                    <h5>Upload Test</h5>
-                    <p>If you have a new or updated test use this page to add it to csTest. Click the Choose Test button to
-                        choose the file that contains the test file to be uploaded. The should generally be a file with a
-                        .js extension. The person creating your file may have also sent a configuration file along with the
-                        test file. This file should have a .json extension and will contain the default values of any test
-                        variables and other test configuration information.</p>
+                    <h5>Tests</h5>
+                    <p>This section allows you to:
+                        <ul>
+                            <li>Delete any tests you may have uploaded</li>
+                            <li>Update any existing tests</li>
+                            <li>Add new tests</li>
+                            <li>Export a tests configuration</li>
+                        </ul>
+                    </p>
+                    <p><strong>Delete</strong><br>If you want to remove a test you have previously uploaded, select the test
+                        from the <span class="csd-ui-reference">Choose your test</span> list. Then click the
+                        <span class="csd-ui-reference">Delete</span> button.</p>
+                    <p><img class="csd-screenshot-small" src="img\deletetest.png" aria-label="Delete Test settings"></p>
+                    <p><strong>Update Test</strong><br>If you need to upload a new test file or update the test variables for
+                        a test you've previously uploaded you can use this page. Firstly choose the test you want to update
+                        from the <span class="csd-ui-reference">Choose your test</span> list. Then click the
+                        <span class="csd-ui-reference">Choose Test</span> or <span class="csd-ui-reference">
+                            Choose Config</span> buttons to choose the files to be used to update the test you have chosen,
+                        then click the <span class="csd-ui-reference">Update</span> button</p>
+                    </p>
+                    <p><img class="csd-screenshot-small" src="img\updatetest.png" aria-label="Update Test settings"></p>
+                    <p><strong>New Test</strong><br>To add a new test to csTest click the <span class="csd-ui-reference">
+                        Choose Test</span> or <span class="csd-ui-reference">Choose Config</span> buttons to choose the files
+                        to be used to create the test, then click the <span class="csd-ui-reference">Create</span> button</p>
+                    <p><img class="csd-screenshot-small" src="img\newtest.png" aria-label="New Test settings"></p>
+                    <p><strong>Export Config</strong><br>To export the test variables for a test, firstly choose the test from
+                        the <span class="csd-ui-reference">Choose your test</span> list. Then click the
+                        <span class="csd-ui-reference">Export</span> button. Enter the name of the new file, choose the folder
+                        where it will be created and then click the <span class="csd-ui-reference">Save</span> button</p>
+                    <p><img class="csd-screenshot-small" src="img\exporttest.png" aria-label="New Test settings"></p>
+
+                    <h5>Reset</h5>
+                    <p><img class="csd-screenshot-small" src="img\reset.png" aria-label="Reset"></p>
+                    <p>Clicking the Reset button will reset csTest to the default settings. You may want to use this to remove
+                        all tests and test variables you may have added to the application.</p>
                 </div>
             </main>
         </div>

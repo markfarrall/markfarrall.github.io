@@ -1,3 +1,25 @@
 .csd-content {
     padding: 0 4% 0 4%;
 }
+
+.csd-screenshot {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 80%;
+}
+
+.csd-screenshot-small {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 50%;
+}
+
+.csd-screenshot-medium {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 65%;
+}
+
+.csd-ui-reference {
+    font-weight: bold;
+}

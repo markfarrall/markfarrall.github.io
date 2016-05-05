@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>cs test</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <body>
+
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout__title">csTest</span>
+                    <div class="mdl-layout-spacer"></div>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title"><a class="mdl-navigation__link" href="./">Home</a></span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="running-a-test.html">Running a test</a>
+                    <a class="mdl-navigation__link" href="recent-tests.html">Recent tests</a>
+                    <a class="mdl-navigation__link" href="saved-tests.html">Saved tests</a>
+                    <a class="mdl-navigation__link" href="settings.html">Settings</a>
+                    <a class="mdl-navigation__link" href="variables.html">Variables</a>
+                    <a class="mdl-navigation__link" href="technical.html">Technical</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="csd-content">
+                    <h4>Variables</h4>
+                    <p><img class="csd-screenshot-medium" src="img\variables.png" aria-label="Variables"></p>
+                    <p>The variables area allows you to define different values for your tests in different environments. For
+                        example, this allows you to define a different URL for your production or test environment. In the
+                        screenshot above different values are defined for the simple Google test. In the
+                        <span class="csd-ui-reference">Italy</span> environment the test searches for canoli using the Italian
+                        Google search page. In the <span class="csd-ui-reference">Default</span> environment, which isn't
+                        visible, the test searches for the word testy using the default Google site.</p>
+                    <p>To maintain variables you can either change the values in the existing environments or you can create
+                        new environments to store new sets of information. To create a new environment you can either choose
+                        the <span class="csd-ui-reference">Save As</span> button at the bottom of an existing environment,
+                        or you can use the <span class="csd-ui-reference">New</span> tab. Either option will ask you for
+                        a name for your new environment and then create the environment. When it is created you will see
+                        it as a new tab in the dialog.</p>
+                    <p> You can also delete old environments using the <span class="csd-ui-reference">
+                        Delete Environment</span> button, or rename existing ones using the <span class="csd-ui-reference">
+                            Rename button</span></p>
+                </div>
+            </main>
+        </div>
+
+        <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    </body>
+
+</html>
